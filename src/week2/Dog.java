@@ -1,6 +1,6 @@
 package week2;
 
-public class Dog {
+class Dog {
     String name;
     int age;
     String breed;
