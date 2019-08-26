@@ -7,24 +7,19 @@ class Game {
     int wins;
     int count;
 
-    //    Secret is assigned a random value between 1-10 inclusive.
+    //    Secret is assigned a random value between 1-10 inclusive
     private Random random = new Random();
     int secret = random.nextInt(10) + 1;
 
-    public static void main(String[] args) {
-
-        String user_input = JOptionPane.showInputDialog(null, "Enter a Guess!");
-
-
-        while (user_input !=)
-    }
-
     void makeGuess(int value) {
-        if (value == secret) {
-            wins++;
-        }
         count++;
 
+        if (value == secret) {
+            JOptionPane.showMessageDialog(null, "You Won!");
+            wins++;
 
+        } else {
+            JOptionPane.showMessageDialog(null, "You fuckin lost idiot");
+        }
     }
 }
